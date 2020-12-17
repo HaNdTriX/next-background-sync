@@ -44,7 +44,7 @@ export default function IndexPage() {
       <section>
         <h2>Input</h2>
         <form onSubmit={handleSubmit}>
-          <input name="label" type="text" />
+          <input name="payload" type="text" />
           <button disabled={isLoading}>Add</button>
         </form>
       </section>
@@ -52,7 +52,7 @@ export default function IndexPage() {
       {error && (
         <section>
           <h2>Error</h2>
-          <pre>{JSON.stringify(error)}</pre>
+          <pre>{error.message}</pre>
         </section>
       )}
 
