@@ -139,7 +139,7 @@ registerRoute(
 );
 
 registerRoute(
-  /\/api\/rki\/.*$/i,
+  /\/api\/rki.*/i,
   new NetworkOnly({
     plugins: [bgSyncPlugin],
   }),
